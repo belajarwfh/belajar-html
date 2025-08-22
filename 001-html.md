@@ -1,57 +1,93 @@
-#apa itu html
-adalah sebuah file yang kita akses saat kita mengakses sebuah website. html sendiri adalah sebuah singkatan dari hype text markup language.
-adalah sebuah bahasa yang nanti akan ada markupnya, dengan markup itu kita bisa merubah stylenya, bagaimana dia ditampilkan di browser kita.
-saat mengakses website, kita mengambil file dari web server, dari sana, filenya itu berupa html, html itu akan ditampilkan browser sehingga tampilannya menjadi cantik.
-pertanyaannya, ini hanya berupa text, bagaimana menampilkan gambar, video dan lainnya. sebenarnya, kita mengakses sebuah website, tidak hanya mengakses html
-kita mengakses file lain juga, diantaranya css, php hingga javascript.
-misal saat kita mengakses website itu ngapain sebenarnya.
-webserver, dimana webservernya. misal kita mengakses website komik doraemon, doraemon dari jepang, kemungkinan ketika kita mengakses mungkin doraemon.jp, kita mengakses sebuah webserver di jepang. kita sebut sebagai request atau http request.
-nah, dari server, dari jepang,nanti dia akan mengirim file, yang disebut tadi berupa html, css, js atau php. webserver mengirim itu sebagai response.
+# Penjelasan HTML
 
-berarti ketika kita ingin membuat website, kita harus bisa membuat html, cs dan js. sehingga kita bisa mengirimkan gambar, video dan lainnya melalui website yang kita bangun.
+## Apa itu HTML?
+**HTML (HyperText Markup Language)** adalah bahasa markup yang digunakan untuk membuat struktur dasar halaman web.  
+Perlu diingat: **HTML bukanlah bahasa pemrograman**, melainkan bahasa markup.  
+Artinya, HTML hanya mengatur **struktur dan isi** dari sebuah halaman web, bukan logika pemrograman.
 
-ini hanya basic, kedepannya mungkin akan ada belajar database, upload gambar, atau membuat animasi di website.
+HTML bekerja dengan menggunakan **tag** (markup) yang memberi tahu browser bagaimana cara menampilkan konten seperti teks, gambar, video, atau link.
 
-struktur html itu sendiri bisa dibagi menjadi dua:
-1. head
-2. body
+---
 
-head : 
-body : 
+## Bagaimana HTML bekerja?
+Ketika kita mengakses sebuah website:
+1. Browser akan mengirim **request (permintaan)** ke **web server**.
+2. Web server mengirimkan **response (balasan)** berupa file HTML, CSS, JavaScript, gambar, atau file lain yang dibutuhkan.
+3. Browser akan membaca file HTML tersebut, lalu menampilkannya dalam bentuk halaman web yang rapi.
+
+Contoh sederhana:
+- Jika kita membuka website `doraemon.jp`, maka browser akan mengirim request ke server di Jepang.
+- Server akan mengirim file HTML (serta CSS, JS, gambar, dll) kembali ke browser kita.
+- Browser menampilkan file tersebut sebagai halaman web Doraemon.
+
+---
+
+## Mengapa HTML penting?
+Jika kita ingin membuat website, **HTML adalah dasar yang wajib dikuasai**.  
+Namun biasanya, HTML dipadukan dengan:
+- **CSS** → untuk mengatur tampilan (warna, ukuran, layout).
+- **JavaScript** → untuk menambahkan interaktivitas (animasi, validasi form, dll).
+- **PHP/Backend** → untuk mengolah data dan berhubungan dengan database.
+
+Jadi, HTML adalah pondasi awal sebelum mempelajari teknologi web lainnya.
+
+---
+
+## Struktur Dasar HTML
+Struktur dasar file HTML terbagi menjadi dua bagian utama:
+
+1. **Head** → berisi informasi tentang halaman web (judul, metadata, link CSS/JS).
+2. **Body** → berisi konten utama yang akan ditampilkan di browser (teks, gambar, video, dll).
+
+Contoh sederhana file HTML:
 
 ```html
 <html>
-  <!-- ini adalah head -->
+  <!-- Bagian Head -->
   <head>
-    <tittle>Belajar HTML</tittle>
+    <title>Belajar HTML</title>
   </head>
-  <!-- ini adalah head -->
+
+  <!-- Bagian Body -->
   <body>
     <h1>Selamat Datang</h1>
-    <p>Ini adalah contoh paragraph tutorial html di repo belajar-html</p>
+    <p>Ini adalah contoh paragraf pada repo belajar-html.</p>
   </body>
 </html>
-```
+````
 
-pertama ini ada tag,
-tag html harus berada dibawah dan diatas, untuk menandakan bahwa ini adalah file html
-yang kedua ada tag head, head juga diawali dan ditutup dengan tag head itu.
-begitu juga tag body, body dan close tag body.
+---
 
-kenapa sih ada html, ada html yang pakai garis miring
+## Penjelasan Tag HTML
+
+Tag HTML selalu ditulis dengan tanda **siku** `< >`.
+
+* **Opening tag** (tag pembuka): `<html>`
+* **Closing tag** (tag penutup): `</html>`
+* Semua konten diletakkan **di antara tag pembuka dan penutup**.
+
+Contoh:
+
 ```html
-<html></html>
+<p>Ini adalah sebuah paragraf.</p>
 ```
-sebuah tag akan dikasih tanda siku "<>".
-"<" : left-angle bracket
-"html" : nama tag
-">" : right-angle bracket
-"<html>" : opening tag
-setiap tag akan ditutup oleh closing tag
-"<" : left-angle bracket
-"/" :forward slash
-">" : right-angle bracket
-"</html>" : closing tag
-dia akan menutup dan membuka, ditengah tengahnya ada isinya.
-isi, title, body, semuanya akan ada pembuka dan penutup.
 
+* `<` → left-angle bracket
+* `p` → tag name
+* `>` → right-angle bracket
+* `<p>` → opening tag (p = paragraph)
+* `/` → forward slash
+* `</p>` → closing tag
+* `Ini adalah sebuah paragraf.` → isi konten
+
+---
+
+## Kesimpulan
+
+* HTML adalah bahasa markup, bukan bahasa pemrograman.
+* HTML membangun struktur dasar halaman web.
+* Website biasanya menggunakan HTML, CSS, dan JavaScript secara bersama.
+* Struktur HTML terdiri dari **head** dan **body**.
+* Tag HTML selalu memiliki **pembuka** dan **penutup**.
+
+HTML adalah langkah awal yang sangat penting sebelum belajar teknologi web lainnya seperti CSS, JavaScript, dan database.
