@@ -1,22 +1,38 @@
-# Installasi dan persiapan
-## apa yang dibutuhkan untuk membuat website?
-pertama, kita perlu menginstall browser yang akan digunakan untuk membuat website. umumnya menggunakan browser bernama chrome, tapi bisa juga pakai browser lain seperti firefox atau safari.
-kedua, kita perlu install text editor, 
+# Instalasi dan Persiapan Membuat Website
 
-> text editor adalah sebuah software yang dirancang untuk membuat atau mengubah text dalam format sederhana atau teks biasa, bukan teks terformat seperti di aplikasi pengolah kata 
+## Apa yang Dibutuhkan?
 
-text editor yang umum digunakan adalah visual studio code. bisa juga pakai text editor lain seperti sublim.
-kalau menggunakan visual studio code, perlu menginstall Ekstensi berikut :
-1. live server -> ekstensi VS Code untuk menjalankan file HTML di browser dengan auto reload setiap kali file disimpan.
-2. prettier -> ekstensi VS Code untuk merapikan kode otomatis (HTML, CSS, JS, dll) agar rapi dan konsisten.
+Sebelum membuat website, ada beberapa hal yang perlu dipersiapkan:
 
-## persiapan
-hal pertama yang kita lakukan adalah memberi tau file kalau ini adalah file html dengan cara tulis : 
+1. **Browser**
+   Digunakan untuk menampilkan (menjalankan) website yang kita buat.
+   Umumnya menggunakan **Google Chrome**, tetapi bisa juga memakai **Firefox**, **Safari**, atau browser lain.
+
+2. **Text Editor**
+   Text editor adalah sebuah perangkat lunak (software) yang dirancang untuk membuat atau mengubah teks dalam format sederhana (plain text), bukan teks terformat seperti di aplikasi pengolah kata (misalnya Microsoft Word).
+
+   Text editor yang umum digunakan untuk membuat website adalah:
+
+   * **Visual Studio Code (VS Code)** → rekomendasi utama.
+   * **Sublime Text** atau text editor lainnya.
+
+   Jika menggunakan **Visual Studio Code**, sebaiknya instal ekstensi berikut:
+
+   * **Live Server** → ekstensi untuk menjalankan file HTML di browser dengan auto-reload setiap kali file disimpan.
+   * **Prettier** → ekstensi untuk merapikan kode otomatis (HTML, CSS, JavaScript, dll) agar lebih rapi dan konsisten.
+
+---
+
+## Persiapan File HTML Pertama
+
+Hal pertama yang perlu dilakukan adalah memberi tahu browser bahwa file yang kita buat adalah **dokumen HTML**, dengan menuliskan deklarasi berikut di baris paling atas:
+
 ```html
 <!DOCTYPE html>
 ```
 
-lalu kemudian bisa diteruskan dengan menulis berdasarkan struktur htmlnya :
+Setelah itu, tuliskan struktur dasar HTML:
+
 ```html
 <html>
   <head>
@@ -28,21 +44,36 @@ lalu kemudian bisa diteruskan dengan menulis berdasarkan struktur htmlnya :
 </html>
 ```
 
+---
 
-Untuk menjalankannya adalah klik kanan, lalu klik “Open with live server “ atau Alt+L alt+o
-Supaya sidebar vsc tertutup bisa pakai ctrl + b
+## Menjalankan File HTML
 
-Kalau ada tanda bulet diatas, berarti belum di save filenya.
+Untuk melihat hasil file HTML di browser:
 
-Contoh : 
+1. Klik kanan pada file di **VS Code**.
+2. Pilih **Open with Live Server**, atau gunakan shortcut **Alt + L** lalu **Alt + O**.
+
+---
+
+## Tips Tambahan di VS Code
+
+* Untuk menutup/menampilkan sidebar di VS Code: tekan **Ctrl + B**.
+* Jika ada tanda bulat di tab atas file, itu berarti file **belum disimpan**.
+
+---
+
+## Contoh File HTML Sederhana
+
 ```html
 <html>
-<head>
-	<tittle>Hello World</tittle>
-</head>
-	<body>
-		Nama saya kemasmyunus
-		Ini adalah file html sederhana
-	</body>
+  <head>
+    <tittle>Hello World</tittle>
+  </head>
+  <body>
+    Nama saya Kemas Myunus. <br>
+    Ini adalah file HTML sederhana.
+  </body>
 </html>
 ```
+
+---
